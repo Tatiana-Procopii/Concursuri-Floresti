@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Concurs</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="linkuri, hyperlinkuri, ancore" />
+    <meta name="description" content="Acest site este dedicat studierii formatarii tabelelelor in HTML" />
+    <meta name="author" content="Procopii Tatiana" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="images/icon1.png" rel="icon" type="images/favicon" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <span> <img alt="icon-titlu" src="../images/trofeu1.png"></span>
+            <span>Concursuri Florești</span>
+        </div>
+        <div class="page-container" id="side-menu">
+            <a href="../index.html" onclick="hideMenu()">Home</a>
+            <a href="despre.html" onclick="hideMenu()">Despre</a>
+            <a href="proiecte.html" onclick="hideMenu()">Proiecte</a>
+            <a href="regulamente.html" onclick="hideMenu()">Regulamente</a>
+            <a href="galerie.html" onclick="hideMenu()">Galerie</a>
+            <a href="contacte.html" onclick="hideMenu()">Contacte</a>
+            <a href="javascript:void(0)" class="icon" onclick="responsiveMenu()">
+                <i id="nav responsive" class="fas fa bars" onclick="show()"></i></a>
+        </div>
+        <i id="menu-btn" class="fas fa-bars" onclick="show()"></i>
+    </header>
+
+
+    <div>
+        <h1 class="centered">
+            Regulamente Concursuri
+        </h1>
+
+        <ul class="documente">
+            <li>
+                <i class="fas fa-download"></i>
+                <a download href="../ressources/soros.pdf">Regulament
+                    Concurs: "Explorăm în aer liber"</a>
+            </li>
+
+        </ul>
+    </div>
+    <footer>
+        <div id="data"></div>
+    </footer>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

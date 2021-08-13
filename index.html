@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Concurs</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="linkuri, hyperlinkuri, ancore" />
+    <meta name="description" content="Acest site este dedicat studierii formatarii tabelelelor in HTML" />
+    <meta name="author" content="Procopii Tatiana" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="images/icon1.png" rel="icon" type="images/favicon" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <span> <img alt="icon-titlu" src="images/trofeu1.png"></span>
+            <span>Concursuri Florești</span>
+        </div>
+        <div class="page-container" id="side-menu">
+            <a href="index.html" onclick="hideMenu()">Home</a>
+            <a href="pages/despre.html" onclick="hideMenu()">Despre</a>
+            <a href="pages/proiecte.html" onclick="hideMenu()">Proiecte</a>
+            <a href="pages/regulamente.html" onclick="hideMenu()">Regulamente</a>
+            <a href="pages/galerie.html" onclick="hideMenu()">Galerie</a>
+            <a href="pages/contacte.html" onclick="hideMenu()">Contacte</a>
+            <a href="javascript:void(0)" class="icon" onclick="responsiveMenu()">
+                <i id="nav responsive" class="fas fa bars" onclick="show()"></i></a>
+        </div>
+        <i id="menu-btn" class="fas fa-bars" onclick="show()"></i>
+    </header>
+
+
+    <div class="container img-bg">
+        <div class="block-container">
+            <div class="d-text"><i>Orice om are dreptul la educație, are dreptul ca această educație să fie
+                    personalizată,
+                    adaptată necesităților și dorințelor în dependență de capacitățile beneficiarului.</i>
+            </div>
+
+            <div class="slideshow">
+                <div class="slide">
+                    <div class="nr-slide"> 1/6 </div>
+                    <img src="images/laborator.jpg">
+                </div>
+                <div class="slide">
+                    <div class="nr-slide"> 2/6 </div>
+                    <img src="images/proiect6.jpg">
+                </div>
+                <div class="slide">
+                    <div class="nr-slide"> 3/6 </div>
+                    <img src="images/proiect7.jpg">
+                </div>
+                <div class="slide">
+                    <div class="nr-slide"> 4/6 </div>
+                    <img src="images/competitie.jpg">
+                </div>
+                <div class="slide">
+                    <div class="nr-slide"> 5/6 </div>
+                    <img src="images/proiect8.jpg">
+                </div>
+                <div class="slide">
+                    <div class="nr-slide"> 6/6 </div>
+                    <img src="images/proiect9.jpg">
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <footer>
+        <div id="data"></div>
+    </footer>
+    <script src="js/main.js"></script>
+
+    <!-- <script src="js/scripts.js"></script> -->
+
+
+</body>
+
+</html>

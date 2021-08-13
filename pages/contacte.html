@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Concurs</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="linkuri, hyperlinkuri, ancore" />
+    <meta name="description" content="Acest site este dedicat concursurilor din raionul Florești" />
+    <meta name="author" content="Procopii Tatiana" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="images/icon1.png" rel="icon" type="images/favicon" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <span> <img alt="icon-titlu" src="../images/trofeu1.png"></span>
+            <span>Concursuri Florești</span>
+        </div>
+        <div class="page-container" id="side-menu">
+            <a href="../index.html" onclick="hideMenu()">Home</a>
+            <a href="despre.html" onclick="hideMenu()">Despre</a>
+            <a href="proiecte.html" onclick="hideMenu()">Proiecte</a>
+            <a href="regulamente.html" onclick="hideMenu()">Regulamente</a>
+            <a href="galerie.html" onclick="hideMenu()">Galerie</a>
+            <a href="contacte.html" onclick="hideMenu()">Contacte</a>
+            <a href="javascript:void(0)" class="icon" onclick="responsiveMenu()">
+                <i id="nav responsive" class="fas fa bars" onclick="show()"></i></a>
+        </div>
+        <i id="menu-btn" class="fas fa-bars" onclick="show()"></i>
+    </header>
+
+
+    <section id="contacte">
+
+        <div class="row">
+            <div class="col-50">
+                <h1 class="centered adresse ">Contacte</h1>
+                <div>
+                    <b>Telefon: 025022602 </b>
+                </div>
+                <div>
+                    <b>Adresa: Florești, bd. Victoriei2, CRF, et. 3</b>
+                </div>
+                <div>
+                    <b>Email: dgitsfloresti@gmail.ru </b>
+                </div>
+                <div class="formular-container">
+                    <form id="formular">
+                        <h3>Lasă mesaj</h3>
+                        <input type="text" id="nume" placeholder="Nume" required>
+                        <br />
+                        <input type="text" id="email" placeholder="Email" required>
+                        <br />
+                        <textarea id="mesaj" rows="4" placeholder="Mesaj" required></textarea>
+                        <br />
+                        <input onclick="send()" type="button" id="transmite" value="Transmite">
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="col-50 harta">
+                <h1 class="centered contacts" >Ne aflăm aici</h1>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4466.691009868569!2d28.301730669518967!3d47.89466258872623!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x26dead9d1b425af6!2sConsiliul%20Raional%20Flore%C5%9Fti!5e0!3m2!1sro!2s!4v1627210750067!5m2!1sro!2s"
+                    width="500" height="410" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div id="data"></div>
+    </footer>
+    <script src="../js/main.js"></script> 
+
+</body>
+
+</html>

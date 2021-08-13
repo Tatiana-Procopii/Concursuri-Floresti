@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Concurs</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="linkuri, hyperlinkuri, ancore" />
+    <meta name="description" content="Acest site este dedicat studierii formatarii tabelelelor in HTML" />
+    <meta name="author" content="Procopii Tatiana" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="images/icon1.png" rel="icon" type="images/favicon" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="../css/lightbox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/lightbox.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <span> <img alt="icon-titlu" src="../images/trofeu1.png"></span>
+            <span>Concursuri Florești</span>
+        </div>
+        <div class="page-container" id="side-menu">
+            <a href="../index.html" onclick="hideMenu()">Home</a>
+            <a href="despre.html" onclick="hideMenu()">Despre</a>
+            <a href="proiecte.html" onclick="hideMenu()">Proiecte</a>
+            <a href="regulamente.html" onclick="hideMenu()">Regulamente</a>
+            <a href="galerie.html" onclick="hideMenu()">Galerie</a>
+            <a href="contacte.html" onclick="hideMenu()">Contacte</a>
+            <a href="javascript:void(0)" class="icon" onclick="responsiveMenu()">
+                <i id="nav responsive" class="fas fa bars" onclick="show()"></i></a>
+        </div>
+        <i id="menu-btn" class="fas fa-bars" onclick="show()"></i>
+    </header>
+
+
+    <div class="container">
+        <h1>Galerie</h1>
+        <div class="galerie">
+            <a href="../images/proiect.jpg" target="_blank">
+                <img src="../images/proiect.jpg" data-aos="flip-up"></a>
+            <a href="../images/proiect1.jpg" target="_blank">
+                <img src="../images/proiect1.jpg" data-aos="flip-up"></a>
+            <a href="../images/proiect2.jpg" target="_blank">
+                <img src="../images/proiect2.jpg" data-aos="flip-up"></a>
+            <a href="../images/proiect3.jpg" target="_blank">
+                <img src="../images/proiect3.jpg" data-aos="flip-up"></a>
+            <a href="../images/proiect4.jpg" target="_blank">
+                <img src="../images/proiect4.jpg" data-aos="flip-up"></a>
+            <a href="../images/proiect5.jpg" target="_blank">
+                <img src="../images/proiect5.jpg" data-aos="flip-up"></a>
+            <a href="../images/proiect6.jpg" target="_blank">
+                <img src="../images/proiect6.jpg" data-aos="flip-up"></a>
+            <a href="../images/proiect7.jpg" target="_blank">
+                <img src="../images/proiect7.jpg" data-aos="flip-up"></a>
+            <a href="../images/proiect8.jpg" target="_blank">
+                <img src="../images/proiect8.jpg" data-aos="flip-up"></a>
+            <a href="../images/proiect9.jpg" target="_blank">
+                <img src="../images/proiect9.jpg" data-aos="flip-up"></a>
+            <a href="../images/proiect10.jpg" target="_blank">
+                <img src="../images/proiect10.jpg" data-aos="flip-up"></a>
+            <a href="../images/proiect11.jpg" target="_blank">
+                <img src="../images/proiect11.jpg" data-aos="flip-up"></a>
+            <a href="../images/proiect12.jpg" target="_blank">
+                <img src="../images/proiect12.jpg" data-aos="flip-up"></a>
+        </div>
+    </div>
+
+    <footer>
+        <div id="data"></div>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script>
+        AOS.init({ duration: 1000 });
+        new SimpleLightbox({ elements: ".galerie a" });
+    </script>
+
+</body>
+
+</html>
