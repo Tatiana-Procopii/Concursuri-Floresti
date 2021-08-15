@@ -57,5 +57,27 @@ function show(){
   slider();
  setInterval(slider, 1500);
 
-   
+
+ emailjs.init("user_vFbROt1l9IOkMhIJlnDG7");
+ function send() {
+
+  if (document.getElementById("formular").checkValidity() == false) {
+      document.getElementById("formular").reportValidity();
+      return;
+  }
+
+  var date = {
+      nume: document.getElementById("nume").value,
+      email: document.getElementById("email").value,
+      mesaj: document.getElementById("mesaj").value
+  };
+
+  emailjs.send("service_au3gb3h", "template_a3c043a", date)
+      .then(function (raspuns) {
+          alert("Mesajul a fost transmis.")
+          document.getElementById("formular").reset();
+      }, function (error) {
+          alert("Eroare la transmitere. Contactati programatorul.")
+      })
+}
   

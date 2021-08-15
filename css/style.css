@@ -294,7 +294,7 @@ p {
 }
 .harta iframe{
     width: 450px;
-    height: 390px;
+    height: 430px;
     margin-left: 40px;
     border-radius: 10px;
 
@@ -599,7 +599,7 @@ footer{
       font-size: 18px;
   }
   .documente {
-      margin-right: 10px;
+      margin-right: 20px;
       margin-left: 5px;
   }
 
@@ -664,12 +664,12 @@ h1.centered.contacts{
     font-size: 14px;
 }
 .harta iframe{
-    width: 290px;
     height: 270px; 
-    margin: 0px 22px 10px 5px;
-    padding: 0px;
+    margin-left: 8px;
+    margin-top: 10px;
+    
+    font-size: 16px;
 }
-
 footer{
 
     font-size: 18px;
