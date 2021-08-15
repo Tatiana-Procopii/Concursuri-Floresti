@@ -37,6 +37,8 @@ function show(){
       }
     }
 
+
+
     var index = 0;
     
     function slider() {
@@ -56,6 +58,7 @@ function show(){
   
   slider();
  setInterval(slider, 1500);
+
 
 
  emailjs.init("user_vFbROt1l9IOkMhIJlnDG7");
@@ -78,6 +81,7 @@ function show(){
           document.getElementById("formular").reset();
       }, function (error) {
           alert("Eroare la transmitere. Contactati programatorul.")
+          alert(error);
       })
 }
   
